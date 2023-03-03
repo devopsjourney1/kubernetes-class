@@ -1,0 +1,27 @@
+#deployment
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: 
+  namespace: 
+  labels:
+    app: 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: 
+      tier: 
+#pod tempalte
+  template:
+    metadata:
+      labels:
+        app: 
+        tier: 
+    spec: # Pod spec
+      containers:
+      - name: mycontainer
+        #https://hub.docker.com/_/nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80

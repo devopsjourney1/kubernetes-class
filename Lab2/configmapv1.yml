@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: nginx-configv1
+  namespace: dev
+  labels:
+    app: mywebapp
+data:
+  index.html: |
+    <html>
+    <body>
+    <h1>Hello World. Version: 1</h1>
+    </body>
+    </html>
+  

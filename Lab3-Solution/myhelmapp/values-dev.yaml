@@ -1,0 +1,12 @@
+appName: myhelmapp
+
+namespace: dev
+
+replicas: 1
+
+configmap:
+  name: nginx-configv2
+
+image:
+  name: nginx
+  tag: latest

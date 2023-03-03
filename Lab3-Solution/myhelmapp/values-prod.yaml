@@ -1,0 +1,12 @@
+appName: myhelmapp
+
+namespace: prod
+
+replicas: 5
+
+configmap:
+  name: nginx-configv1
+
+image:
+  name: nginx
+  tag: stable
